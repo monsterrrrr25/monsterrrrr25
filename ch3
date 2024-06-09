@@ -1,0 +1,114 @@
+- 👋 Hi, I’m @monsterrrrr25
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+
+<!---
+monsterrrrr25/monsterrrrr25 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+// (1) 計算2的十次方
+
+let result = Math.pow(2, 10);
+console.log(result); // 1024
+
+
+// (2) 計算100除以7的商和餘數
+
+let dividend = 100;
+let divisor = 7;
+
+let quotient = Math.floor(dividend / divisor); // 商
+let remainder = dividend % divisor; // 餘數
+
+console.log("商:", quotient); // 14
+console.log("餘數:", remainder); // 2
+
+
+// (3) 計算10除以3的結果並保留2位小數
+
+let result = 10 / 3;
+let roundedResult = result.toFixed(2);
+
+console.log(roundedResult);  // 輸出: 3.33
+
+
+// (4) 將字串"5"轉換成數值型別，然後加上10
+
+let str = "5";
+let num = Number(str); // 或者可以使用 parseInt(str, 10)
+let result = num + 10;
+
+console.log(result);  // 輸出: 15
+
+
+// (5) 計算圓形的面積，半徑為7
+
+let radius = 7;
+let area = Math.PI * Math.pow(radius, 2);
+
+console.log(area);  // 輸出: 153.93804002589985
+
+// (6) 將字串"hello"與字串"world"連起來
+
+let str1 = "hello";
+let str2 = "world";
+let combinedStr = str1 + " " + str2;
+
+console.log(combinedStr);  // 輸出: hello world
+
+// (7) 計算數字123的個位數字
+
+let number = 123;
+let unitsDigit = number % 10;
+
+console.log(unitsDigit);  // 輸出: 3
+
+
+// (8) 將數字4轉換成字串型別，然後連接上字串"2"
+
+let num = 4;
+let strNum = num.toString(); // 將數字轉換為字串
+let str = "2";
+let combinedStr = strNum + str;
+
+console.log(combinedStr);  // 輸出: 42
+
+// (9) 判斷數字15是否在10到20的範圍內
+
+let number = 15;
+let isInRange = (number >= 10 && number <= 20);
+
+console.log(isInRange);  // 輸出: true
+
+
+// (10) 判斷字串"hello"是否既不是空字串也不是undefined
+
+let str = "hello";
+let isValid = (str !== "" && str !== undefined);
+
+console.log(isValid);  // 輸出: true
+
+
+// (11) 判斷數字25是否為偶數
+
+let number = 25;
+let isEven = (number % 2 === 0);
+
+console.log(isEven);  // 輸出: false
+
+// (12) 比較數字x和數字y的大小
+
+let x = 5; // 您可以將 x 設為任意數字
+let y = 10; // 您可以將 y 設為任意數字
+
+if (x > y) {
+    console.log("x 大於 y");
+} else if (x < y) {
+    console.log("x 小於 y");
+} else {
+    console.log("x 等於 y");
+}
