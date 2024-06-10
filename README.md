@@ -1,0 +1,68 @@
+## Hi there 👋
+
+<!--
+**monsterrrrr25/monsterrrrr25** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
+function calculateAverage(...numbers) {
+    const sum = numbers.reduce((acc, num) => acc + num, 0);
+    return numbers.length === 0 ? 0 : sum / numbers.length;
+}
+
+// 測試
+console.log(calculateAverage(1, 2, 3, 4, 5)); // 3
+console.log(calculateAverage(10, 20, 30)); // 20
+console.log(calculateAverage()); // 0
+function isPrime(number) {
+    if (number <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) return false;
+    }
+    return true;
+}
+
+// 測試
+console.log(isPrime(2)); // true
+console.log(isPrime(3)); // true
+console.log(isPrime(4)); // false
+console.log(isPrime(17)); // true
+function findMinMax(array) {
+    if (array.length === 0) return { min: null, max: null };
+    let min = array[0];
+    let max = array[0];
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] < min) min = array[i];
+        if (array[i] > max) max = array[i];
+    }
+    return { min, max };
+}
+
+// 測試
+console.log(findMinMax([1, 2, 3, 4, 5])); // { min: 1, max: 5 }
+console.log(findMinMax([10, -5, 7, 99, 0])); // { min: -5, max: 99 }
+console.log(findMinMax([])); // { min: null, max: null }
+function findMinMax(array) {
+    if (array.length === 0) return { min: null, max: null };
+    let min = array[0];
+    let max = array[0];
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] < min) min = array[i];
+        if (array[i] > max) max = array[i];
+    }
+    return { min, max };
+}
+
+// 測試
+console.log(findMinMax([1, 2, 3, 4, 5])); // { min: 1, max: 5 }
+console.log(findMinMax([10, -5, 7, 99, 0])); // { min: -5, max: 99 }
+console.log(findMinMax([])); // { min: null, max: null }
